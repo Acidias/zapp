@@ -34,7 +34,9 @@ public class CardTester
         cardlist.add(c8);
         cardlist.add(c9);
         
-        c9.convertPoints(9);
+        c9.convertPoints(1);
+        c9.convertPoints(10);
+        c9.convertPoints(1);
         
         System.out.println("Test: " + cardlist);
         

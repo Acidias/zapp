@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Card
-comment0.text=\n\ A\ Card\ has\ an\ id\ number,\ name,\ a\ luxury\ rating,\ number\ of\ credits\ and\ points.\n\ \n\ @Kitti\ Pinter\n\ @1.0\ (2023)\n
+comment0.text=\n\ A\ Card\ has\ an\ id\ number,\ name,\ a\ luxury\ rating,\ number\ of\ credits\ and\ points.\n\ \n\ @Kitti\ Pinter\n\ \ \ \ \ \ \ \ @1.0\ (2023)\n
 comment1.params=cardId\ guestName\ luxuryRating\ credits
 comment1.target=Card(int,\ java.lang.String,\ int,\ int)
 comment10.params=
