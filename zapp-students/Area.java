@@ -13,6 +13,15 @@ import java.util.*;
 
 public class Area 
 {
+  private int referenceNumber;
+  private String areaName;
+  private int rating;
+  private int capacity;
   
-    
+  public Area (int referenceNumber, String areaName, int rating, int capacity){
+      this.referenceNumber = referenceNumber;
+      this.areaName = areaName;
+      this.rating = rating;
+      this.capacity = capacity;
+  }
 }

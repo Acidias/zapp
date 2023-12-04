@@ -1,2 +1,4 @@
 #BlueJ class context
-numComments=0
+comment0.target=Bridge
+comment0.text=\n\ A\ bridge\ provides\ a\ one-way\ connection\ between\ two\ areas.\ It\n\ has\ a\ bridge\ code\ and\ information\ about\ both\ the\ source\ and\n\ the\ destination\ area\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+numComments=1
