@@ -1,24 +1,25 @@
 #BlueJ class context
 comment0.target=Card
-comment0.text=\n\ A\ Card\ has\ an\ id\ number,\ name,\ a\ luxury\ rating,\ number\ of\ credits\ and\ points.\n\ \n\ @Kitti\ Pinter\n\ \ \ \ \ \ \ \ @1.0\ (2023)\n
+comment0.text=\n\ A\ Card\ has\ an\ id\ number,\ name,\ a\ luxury\ rating,\ number\ of\ credits\ and\ points.\n\ \n\ @Kitti\ Pinter\n\ @1.0\ (2023)\n
 comment1.params=cardId\ guestName\ luxuryRating\ credits
 comment1.target=Card(int,\ java.lang.String,\ int,\ int)
 comment10.params=
-comment10.target=void\ list()
+comment10.target=void\ print()
 comment2.params=
-comment2.target=int\ cardId()
+comment2.target=int\ getcardId()
 comment3.params=
 comment3.target=int\ getluxuryRating()
 comment4.params=
 comment4.target=int\ getCredits()
 comment5.params=p
 comment5.target=int\ reduceCredits(int)
-comment6.params=p
-comment6.target=void\ convertPoints(int)
+comment6.params=
+comment6.target=void\ convertPoints()
 comment7.params=c
 comment7.target=void\ addCard(Card)
-comment8.params=
-comment8.target=java.lang.String\ toString()
+comment7.text=public\ void\ convertPoints(int\ p){\n\ \ \ \ \ \ \ \ System.out.println("convertPoints\ called\ with\ "\ +\ p\ +\ "\ points");\n\ \ \ \ \ \ \ \ p\ \=\ points\ +\ p;\n\ \ \ \ \ \ \ \ if\ (p\ <\ 3)\ {\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Not\ enough\ points\ to\ convert\ ("\ +\ p\ +\ ")");\n\ \ \ \ \ \ \ \ \ \ \ \ points\ +\=\ p;\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(p\ +\ "\ added\ to\ points.\ New\ points\ ("\ +\ points\ +")");\n\ \ \ \ \ \ \ \ }\ else\ if\ (p\ %\ 3\ \=\=\ 0)\ {\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Credits\ Before\ Convert\:\ "\ +\ credits);\n\ \ \ \ \ \ \ \ \ \ \ \ credits\ \=\ credits\ +\ (p\ /\ 3);\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Enough\ points\ to\ convert\ ("\ +\ p\ +\ ")");\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Credits\ After\ Convert\:\ "\ +\ credits);\n\ \ \ \ \ \ \ \ }\ else\ {\n\ \ \ \ \ \ \ \ \ \ \ \ int\ remainder\ \=\ p\ %\ 3;\n\ \ \ \ \ \ \ \ \ \ \ \ points\ \=\ p\ -\ remainder;\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Remainder\:\ "\ +\ remainder\ +\ "("\ +\ p\ +\ "\ -\ "\ +\ points\ +\ ")");\n\ \ \ \ \ \ \ \ \ \ \ \ int\ converted\ \=\ points\ /\ 3;\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Credits\ Before\ Convert\:\ "\ +\ credits);\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Added\ "\ +\ converted\ +\ "\ credits");\n\ \ \ \ \ \ \ \ \ \ \ \ credits\ \=\ credits\ +\ converted;\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Credits\ After\ Convert\:\ "\ +\ credits);\n\ \ \ \ \ \ \ \ \ \ \ \ points\ \=\ remainder;\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Points\ After\ contvert\:\ "\ +\ points);\n\ \ \ \ \ \ \ \ }\n}
+comment8.params=points
+comment8.target=int\ addPoints(int)
 comment9.params=
-comment9.target=void\ print()
+comment9.target=java.lang.String\ toString()
 numComments=11

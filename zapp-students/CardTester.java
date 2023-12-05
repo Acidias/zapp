@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 import java.util.List; 
 /**
  * Write a description of class CardTester here.
@@ -10,7 +10,7 @@ public class CardTester
 {
     public static void main(String[] args)
     {
-        ArrayList<Card> cardlist = new ArrayList<Card>();
+        List<Card> cardlist = new ArrayList<>();
         
         Card c1 = new Card(1000, "Lynn", 5, 10);
         Card c2 = new Card(1001, "May", 3, 20);
@@ -34,12 +34,11 @@ public class CardTester
         cardlist.add(c8);
         cardlist.add(c9);
         
-        c9.convertPoints(1);
-        c9.convertPoints(10);
-        c9.convertPoints(1);
+        c9.addPoints(10);
+        c9.convertPoints();
         
-        System.out.println("Test: " + cardlist);
-        
-       
+        for (Card card : cardlist) {
+            card.print();
+        }
     }
 }
